@@ -14,14 +14,14 @@ class App extends Component {
                 <div>
                     <Link to="/1">
                         <button>
-                            11s
+                            1
                         </button>
                     </Link>
                     <button onClick={()=>{this.props.router.push("/2")}}>
-                        2d
+                        2
                     </button>
                     <button onClick={()=>{this.props.router.push("/3")}}>
-                        3ds
+                        3
                     </button>
                 </div>
                 <div>

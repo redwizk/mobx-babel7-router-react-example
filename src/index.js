@@ -26,6 +26,7 @@ if (process.env.NODE_ENV === 'development') {
         module.hot.accept();
     }
     if (!window.stores || !window.browserHistory) {
+        window.browserHistory = browserHistory;
         window.stores = stores;
     }
 }
