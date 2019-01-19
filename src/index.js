@@ -27,6 +27,5 @@ if (process.env.NODE_ENV === 'development') {
     }
     if (!window.stores || !window.browserHistory) {
         window.browserHistory = browserHistory;
-        window.stores = stores;
     }
 }
