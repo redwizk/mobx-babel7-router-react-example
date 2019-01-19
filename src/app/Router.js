@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Switch, Route, Redirect, withRouter } from "react-router";
+import { Switch, Route, withRouter, Redirect } from "react-router";
+
 class Home extends Component {
     render() {
       return (
@@ -13,7 +14,7 @@ class Comp1 extends Component {
   render() {
     return (
       <div>
-        1132
+        1
       </div>
     )
   }
@@ -22,7 +23,7 @@ class Comp2 extends Component {
   render() {
     return (
       <div>
-        21
+        2
       </div>
     )
   }
@@ -31,12 +32,11 @@ class Comp3 extends Component {
   render() {
     return (
       <div>
-        31
+        3
       </div>
     )
   }
 }
-
 
 export class Router extends Component {
   render() {
@@ -59,4 +59,4 @@ export class Router extends Component {
   }
 }
 
-export default Router
+export default Router;
