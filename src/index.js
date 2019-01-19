@@ -21,9 +21,5 @@ ReactDOM.render(
     , rootElement);
 
 if (module.hot) {
-    console.log("[hot.status]"+module.hot.status());
-    module.hot.accept( function () {
-        console.log("[hot.status] : "+module.hot.status());
-        console.log('Accepting the updated printMe module!');
-    })
+    module.hot.accept();
 }
