@@ -9,7 +9,7 @@ import App   from "app"  ;
 import Store from "store";
 
 const rootElement = document.getElementById("root");
-const store = window.store || new Store();
+const store = new Store();
 const browserHistory = window.browserHistory || createBrowserHistory();
 const history = syncHistoryWithStore(browserHistory, store.router);
 
@@ -27,6 +27,5 @@ if (process.env.NODE_ENV === 'development') {
     }
     if (!window.store || !window.browserHistory) {
         window.browserHistory = browserHistory;
-        window.store = store;
     }
 }
